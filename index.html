@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    nav {
+      background: #e10600;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 12px 0 6px;
+    }
+    .price {
+      color: #e10600;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background: #333;
+    }
+    .about, .contact {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚽ Kit Zone</h1>
+    <p>Kits Only • Player • Fan • Retro</p>
+  </header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="products">
+    <h2 class="section-title">🔥 Our Football Kits</h2>
+
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x300?text=Football+Kit" alt="Football Kit">
+        <h3>Player Version Kit</h3>
+        <p class="price">8 BHD</p>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x300?text=Football+Kit" alt="Football Kit">
+        <h3>Fan Version Kit</h3>
+        <p class="price">7 BHD</p>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300x300?text=Football+Kit" alt="Football Kit">
+        <h3>Retro Kit</h3>
+        <p class="price">8.5 BHD</p>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h2>About Kit Zone</h2>
+      <p>
+        Kit Zone specializes in football kits only.
+        We offer Player Version, Fan Version, and Retro kits at great prices.
+      </p>
+      <p>
+        ➕ Add name, number & patches: <strong>+1 BHD</strong><br>
+        🚚 Delivery: <strong>1.5 BHD</strong>
+      </p>
+    </div>
+
+    <div class="contact" id="contact">
+      <h2>Contact & Orders</h2>
+      <p>📩 Instagram Orders: <strong>@kit.zone.bh</strong></p>
+      <p>📍 Location: <strong>Bahrain</strong></p>
+      <p>
+        💰 Prices:<br>
+        Player Version: 8 BHD<br>
+        Fan Version: 7 BHD<br>
+        Retro Kits: 8.5 BHD<br>
+        Add Name/Number/Patches: +1 BHD<br>
+        Delivery: 1.5 BHD
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Football Shop. All rights reserved.
+  </footer>
+
+</body>
+</html>
